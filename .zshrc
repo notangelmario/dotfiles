@@ -104,6 +104,7 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun" 
 export PATH="$BUN_INSTALL/bin:$PATH" 
 
-alias fvim="sommelier -X --scale=0.8 fvim"
-
-. "$HOME/.cargo/env"
+export CARGO_PATH="$HOME/.cargo"
+if [ -d "$CARGO_PATH/env"]; then
+	. "$HOME/.cargo/env"
+fi
