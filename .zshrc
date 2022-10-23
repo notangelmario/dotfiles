@@ -105,6 +105,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH" 
 
 export CARGO_PATH="$HOME/.cargo"
-if [ -d "$CARGO_PATH/env" ]; then
+
+if [ -f "$CARGO_PATH/env" ]; then
 	. "$HOME/.cargo/env"
 fi
