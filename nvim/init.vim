@@ -14,9 +14,12 @@ set splitbelow
 set number
 set relativenumber
 
-" Set tab size to 4
-set tabstop=4
-set tabline=4
+" Set tab size to 2
+set tabstop=2
+set tabline=2
+
+" Remove line numbers from terminal
+autocmd TermOpen * setlocal nonumber norelativenumber
 
 " Enable copying to system clipboard
 set clipboard+=unnamedplus
