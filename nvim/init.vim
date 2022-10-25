@@ -1,12 +1,15 @@
 call plug#begin()
+	Plug 'morhetz/gruvbox'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'nvim-lualine/lualine.nvim'
-	Plug 'ryanoasis/vim-devicons'
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 	Plug 'romgrk/barbar.nvim'
 	Plug 'nvim-tree/nvim-tree.lua'
 call plug#end()
+
+" Enable gruvbox theme
+colorscheme gruvbox
 
 " Make :split below of current buffer
 set splitbelow
