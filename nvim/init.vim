@@ -3,6 +3,7 @@ call plug#begin()
 	Plug 'nvim-lualine/lualine.nvim'
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'kyazdani42/nvim-web-devicons'
+	Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 	Plug 'romgrk/barbar.nvim'
 	Plug 'nvim-tree/nvim-tree.lua'
 call plug#end()
@@ -29,14 +30,9 @@ set nowrap
 noremap <C-n> :NvimTreeToggle<CR>
 
 " Setup terminal
-noremap <C-\> :split +term<CR>
-autocmd TermOpen * setlocal nonumber norelativenumber
-autocmd TermOpen * startinsert
-autocmd TermOpen * horizontal resize 8
-augroup rc
-au!
-au TermOpen * setlocal nobuflisted
-augroup END
+autocmd TermEnter term://*toggleterm#*
+      \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 
 " Enable copying to system clipboard
 set clipboard+=unnamedplus
@@ -67,7 +63,7 @@ endif
 " Setup lua modules
 lua << END
 require("nvim-tree").setup()
-
+require("toggleterm").setup{}
 require('lualine').setup()
 
 local nvim_tree_events = require('nvim-tree.events')
