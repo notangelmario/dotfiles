@@ -29,7 +29,8 @@ set tabstop=4
 set tabline=4
 set nowrap
 
-" Remove line numbers from terminal
+" Setup terminal
+noremap <C-\> :split +term<CR>
 autocmd TermOpen * setlocal nonumber norelativenumber
 autocmd TermOpen * horizontal resize 8
 
