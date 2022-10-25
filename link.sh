@@ -1,4 +1,4 @@
 #!/bin/bash
-ln .zshrc ~
+ln $(pwd)/.zshrc ~
 mkdir -p ~/.config/nvim
-ln nvim/init.vim ~/.config/nvim/init.vim
+ln -s $(pwd)/nvim/init.vim ~/.config/nvim/init.vim
