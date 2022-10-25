@@ -26,6 +26,10 @@ set tabstop=4
 set tabline=4
 set nowrap
 
+" Map barbar
+nnoremap <silent>    <A-,> <Cmd>BufferPrevious<CR>
+nnoremap <silent>    <A-.> <Cmd>BufferNext<CR>
+
 " Map NvimTree toggle
 noremap <C-n> :NvimTreeToggle<CR>
 
