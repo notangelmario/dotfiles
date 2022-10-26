@@ -8,7 +8,7 @@ call plug#begin()
 	Plug 'nvim-tree/nvim-tree.lua'
 call plug#end()
 
-" Enable gruvbox theme
+" Set color scheme to gruvbox
 colorscheme gruvbox
 
 " Make :split below of current buffer
@@ -20,6 +20,9 @@ set encoding=UTF-8
 " Line numbers
 set number
 set relativenumber
+
+" Padding to cursor pos
+set scrolloff=10
 
 " Set tab size to 4
 set autoindent
