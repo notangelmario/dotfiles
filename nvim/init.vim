@@ -27,9 +27,9 @@ set scrolloff=10
 " Set tab size to 4
 set autoindent
 set noexpandtab
-set shiftwidth=2
-set tabstop=2
-set tabline=2
+set shiftwidth=4
+set tabstop=4
+set tabline=4
 set nowrap
 
 " Map barbar
