@@ -27,9 +27,9 @@ set scrolloff=10
 " Set tab size to 4
 set autoindent
 set noexpandtab
-set shiftwidth=4
-set tabstop=4
-set tabline=4
+set shiftwidth=2
+set tabstop=2
+set tabline=2
 set nowrap
 
 " Map barbar
@@ -38,7 +38,7 @@ nnoremap <silent>    <A-.> <Cmd>BufferNext<CR>
 nnoremap <silent>    <A-c> <Cmd>BufferClose<CR>
 
 " Map NvimTree toggle
-noremap <C-n> :NvimTreeToggle<CR>
+noremap <C-b> :NvimTreeToggle<CR>
 
 " Setup terminal
 autocmd TermEnter term://*toggleterm#*

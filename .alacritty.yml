@@ -1,9 +1,21 @@
 # Window
-
 window:
   dimensions:
     columns: 100
     lines: 25 
+
+# Font
+font:
+  normal:
+    family: DejaVuSansMono Nerd Font
+
+    style: Book 
+
+
+# Key bindings
+key_bindings:
+  - { key: Return, mods: Alt, action: ToggleFullscreen }
+
 
 # Colors (Gruvbox dark)
 colors:
@@ -91,10 +103,3 @@ colors:
     - { index: 246, color: '#a89984' }
     - { index: 248, color: '#bdae93' }
     - { index: 250, color: '#d5c4a1' }
-
-font:
-  # Normal (roman) font face
-  normal:
-    family: DejaVuSansMono Nerd Font
-
-    style: Book 
