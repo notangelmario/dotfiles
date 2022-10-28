@@ -2,6 +2,7 @@ call plug#begin()
 	Plug 'morhetz/gruvbox'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'nvim-lualine/lualine.nvim'
+	Plug 'evanleck/vim-svelte', {'branch': 'main'}
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 	Plug 'romgrk/barbar.nvim'
