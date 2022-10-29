@@ -4,6 +4,7 @@ call plug#begin()
 	Plug 'nvim-lualine/lualine.nvim'
 	Plug 'evanleck/vim-svelte', {'branch': 'main'}
 	Plug 'kyazdani42/nvim-web-devicons'
+	Plug 'wuelnerdotexe/vim-astro'
 	Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 	Plug 'romgrk/barbar.nvim'
 	Plug 'nvim-tree/nvim-tree.lua'
