@@ -7,6 +7,7 @@ call plug#begin()
 	Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 	Plug 'romgrk/barbar.nvim'
 	Plug 'nvim-tree/nvim-tree.lua'
+	Plug 'github/copilot.vim'
 call plug#end()
 
 " Set color scheme to gruvbox
