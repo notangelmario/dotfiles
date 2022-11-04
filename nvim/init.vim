@@ -8,6 +8,7 @@ call plug#begin()
 	Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 	Plug 'romgrk/barbar.nvim'
 	Plug 'nvim-tree/nvim-tree.lua'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm i' }
 	Plug 'github/copilot.vim'
 call plug#end()
 
