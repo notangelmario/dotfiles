@@ -109,3 +109,11 @@ export CARGO_PATH="$HOME/.cargo"
 if [ -f "$CARGO_PATH/env" ]; then
 	. "$HOME/.cargo/env"
 fi
+
+if [ -f "/usr/bin/box64" ]; then
+	export BOX64_PATH="/usb/bin/box64"
+	
+	if [ -f "$HOME/.solc/bin/solc" ]; then
+		alias solc="$BOX64_PATH $HOME/.solc/bin/solc"
+	fi
+fi
