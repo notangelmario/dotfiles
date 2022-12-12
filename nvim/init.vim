@@ -1,5 +1,6 @@
 call plug#begin()
 	Plug 'morhetz/gruvbox'
+	Plug 'tpope/vim-commentary'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'nvim-lualine/lualine.nvim'
 	Plug 'evanleck/vim-svelte', {'branch': 'main'}
