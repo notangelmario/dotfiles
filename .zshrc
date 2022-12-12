@@ -101,19 +101,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export DENO_INSTALL="/home/notangelmario/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
-export BUN_INSTALL="$HOME/.bun" 
-export PATH="$BUN_INSTALL/bin:$PATH" 
 
 export CARGO_PATH="$HOME/.cargo"
 
 if [ -f "$CARGO_PATH/env" ]; then
 	. "$HOME/.cargo/env"
-fi
-
-if [ -f "/usr/bin/box64" ]; then
-	export BOX64_PATH="/usb/bin/box64"
-	
-	if [ -f "$HOME/.solc/bin/solc" ]; then
-		alias solc="$BOX64_PATH $HOME/.solc/bin/solc"
-	fi
 fi

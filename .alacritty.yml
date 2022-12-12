@@ -15,7 +15,7 @@ font:
 # Key bindings
 key_bindings:
   - { key: Return, mods: Alt, action: ToggleFullscreen }
-
+  - { key: Tab, mods: Alt, action: None }
 
 # Colors (Gruvbox dark)
 colors:
@@ -32,19 +32,6 @@ colors:
   vi_mode_cursor:
     text:   CellBackground
     cursor: CellForeground
-  # search:
-  #   matches:
-  #     foreground: '#000000'
-  #     background: '#ffffff'
-  #   focused_match:
-  #    foreground: CellBackground
-  #    background: CellForeground
-  #   bar:
-  #     background: ''
-  #     foreground: ''
-  # line_indicator:
-  #   foreground: None
-  #   background: None
   selection:
     text:       CellBackground
     background: CellForeground
