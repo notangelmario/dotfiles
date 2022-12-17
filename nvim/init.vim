@@ -11,6 +11,8 @@ call plug#begin()
 	Plug 'nvim-tree/nvim-tree.lua'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm i' }
 	Plug 'github/copilot.vim'
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
 
 " Set color scheme to gruvbox
@@ -32,9 +34,9 @@ set scrolloff=10
 " Set tab size to 4
 set autoindent
 set noexpandtab
-set shiftwidth=4
-set tabstop=4
-set tabline=4
+set shiftwidth=2
+set tabstop=2
+set tabline=2
 set nowrap
 
 " Map barbar
@@ -44,6 +46,12 @@ nnoremap <silent>    <A-c> <Cmd>BufferClose<CR>
 
 " Map NvimTree toggle
 noremap <C-b> :NvimTreeToggle<CR>
+
+" Map Telescope
+noremap <C-p> :Telescope find_files<CR>
+
+" Map Telescope live grep
+noremap <C-f> :Telescope live_grep<CR>
 
 " Setup terminal
 autocmd TermEnter term://*toggleterm#*
