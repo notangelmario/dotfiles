@@ -15,7 +15,8 @@ font:
 # Key bindings
 key_bindings:
   - { key: Return, mods: Alt, action: ToggleFullscreen }
-  - { key: Tab, mods: Alt, action: None }
+  - { key: Minus, mods: Alt, action: Minimize } 
+  - { key: W, mods: Control|Shift, action: Quit }
 
 # Colors (Gruvbox dark)
 colors:
