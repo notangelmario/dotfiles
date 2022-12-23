@@ -2,7 +2,7 @@ local opts = { noremap = true, silent = true }
 
 vim.keymap.set('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
 vim.keymap.set('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
-vim.keymap.set('n', '<A-q>', '<Cmd>BufferClose<CR>', opts)
+vim.keymap.set('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
 
 local nvim_tree_events = require('nvim-tree.events')
 local bufferline_api = require('bufferline.api')
