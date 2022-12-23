@@ -103,6 +103,10 @@ export DENO_INSTALL="/home/notangelmario/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 export CARGO_PATH="$HOME/.cargo"
+# Use rustup which --toolchain stable rust-analyzer to get path to binary
+# and remove /rust-analyzer from the end
+export RUST_ANALYZER_PATH=$(rustup which --toolchain stable rust-analyzer | sed 's/\/rust-analyzer//g')
+export PATH="$RUST_ANALYZER_PATH:$PATH"
 
 if [ -f "$CARGO_PATH/env" ]; then
 	. "$HOME/.cargo/env"
