@@ -1,6 +1,7 @@
 require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "typescript", "c", "rust", "lua", "python" },
   highlight = {
-	enable = true,              -- false will disable the whole extension
+	enable = true,
   },
   indent = {
 	enable = true
