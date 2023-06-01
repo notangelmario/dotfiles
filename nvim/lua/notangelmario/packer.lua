@@ -3,6 +3,16 @@ vim.cmd("packadd packer.nvim")
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
+
   use {
 	'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	-- or                            , branch = '0.1.x',
@@ -39,10 +49,8 @@ return require('packer').startup(function(use)
 	  require("toggleterm").setup()
   end}
 
-  use {'neoclide/coc.nvim', branch = 'release'}
   use 'tpope/vim-commentary'
 
-  use 'neovim/nvim-lspconfig'
   use 'github/copilot.vim'
 
   use 'nvim-tree/nvim-web-devicons'
