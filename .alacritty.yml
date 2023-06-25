@@ -7,7 +7,7 @@ window:
 # Font
 font:
   normal:
-    family: DejaVuSansM Nerd Font Mono
+    family: FiraCode Nerd Font
 
     style: Book 
 
