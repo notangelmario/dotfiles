@@ -1,3 +1,4 @@
+require("notangelmario.neovide")
 require("notangelmario.packer")
 require("notangelmario.remap")
 
