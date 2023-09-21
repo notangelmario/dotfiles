@@ -115,3 +115,6 @@ require('lspconfig')['tsserver'].setup {
 require('lspconfig')['svelte'].setup {
 	capabilities = capabilities
 }
+require('lspconfig')['astro'].setup {
+	capabilities = capabilities
+}
