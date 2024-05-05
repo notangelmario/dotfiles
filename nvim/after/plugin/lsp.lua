@@ -110,7 +110,22 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Language Servers
 require('lspconfig')['tsserver'].setup {
+	capabilities = capabilities,
+	root_dir = lspconfig.util.root_pattern("package.json"),
+	single_file_support = false
+}
+require('lspconfig')['cssls'].setup {
 	capabilities = capabilities
+}
+require('lspconfig')['html'].setup {
+	capabilities = capabilities
+}
+require('lspconfig')['jsonls'].setup {
+	capabilities = capabilities
+}
+require('lspconfig')['denols'].setup {
+	capabilities = capabilities,
+	root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc")
 }
 require('lspconfig')['svelte'].setup {
 	capabilities = capabilities
