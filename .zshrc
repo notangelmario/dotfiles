@@ -107,8 +107,8 @@ export CARGO_PATH="$HOME/.cargo"
 if [ -f "$CARGO_PATH/env" ]; then
 	# Use rustup which --toolchain stable rust-analyzer to get path to binary
 	# and remove /rust-analyzer from the end
-	export RUST_ANALYZER_PATH=$(rustup which --toolchain stable rust-analyzer | sed 's/\/rust-analyzer//g')
-	export PATH="$RUST_ANALYZER_PATH:$PATH"
+	# export RUST_ANALYZER_PATH=$(rustup which --toolchain stable rust-analyzer | sed 's/\/rust-analyzer//g')
+	# export PATH="$RUST_ANALYZER_PATH:$PATH"
 
 	. "$HOME/.cargo/env"
 fi
