@@ -119,3 +119,11 @@ export PATH=$BUN_INSTALL/bin:$PATH
 
 # bun completions
 [ -s "/home/notangelmario/.bun/_bun" ] && source "/home/notangelmario/.bun/_bun"
+
+# gleam
+export PATH="/usr/local/gleam/bin:$PATH"
+
+# fzf
+source <(fzf --zsh)
+alias fzf='fzf --preview="bat --color=always {}"'
+alias zfzf='zed -n $(fzf)'
