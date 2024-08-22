@@ -99,8 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export DENO_INSTALL="/home/notangelmario/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 export CARGO_PATH="$HOME/.cargo"
 
@@ -113,17 +114,14 @@ if [ -f "$CARGO_PATH/env" ]; then
 	. "$HOME/.cargo/env"
 fi
 
+# deno
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
 
-# bun completions
-[ -s "/home/notangelmario/.bun/_bun" ] && source "/home/notangelmario/.bun/_bun"
-
-# gleam
-export PATH="/usr/local/gleam/bin:$PATH"
-
-# fzf
-source <(fzf --zsh)
-alias fzf='fzf --preview="bat --color=always {}"'
-alias zfzf='zed -n $(fzf)'
+# GPG Stuff
+export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
