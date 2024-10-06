@@ -9,10 +9,12 @@
   {
     "context": "Workspace",
     "bindings": {
-    	"cmd-b": "workspace::ToggleRightDock",
+    	"cmd-b": "workspace::ToggleLeftDock",
       // "shift shift": "file_finder::Toggle"
       "alt-,": "pane::ActivatePrevItem",
-      "alt-.": "pane::ActivateNextItem"
+      "alt-.": "pane::ActivateNextItem",
+      "ctrl-b": "workspace::ToggleRightDock",
+      "cmd-r": "vim::Redo"
     }
   },
   {
