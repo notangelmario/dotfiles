@@ -18,8 +18,10 @@
     }
   },
   {
-    "context": "Editor",
+    "context": "Editor && vim_mode == visual",
     "bindings": {
+    	"K": "editor::MoveLineUp",
+     	"J": "editor::MoveLineDown"
       // "j k": ["workspace::SendKeystrokes", "escape"]
     }
   }

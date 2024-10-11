@@ -8,12 +8,13 @@
 // command palette
 {
 	"base_keymap": "VSCode",
+	"relative_line_numbers": true,
 	"features": {
 		"inline_completion_provider": "none",
 		"copilot": false
 	},
 	"assistant": {
-		"version": "1",
+		"version": "2",
 		"button": false,
 		"enabled": false
 	},
