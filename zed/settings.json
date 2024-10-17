@@ -15,9 +15,9 @@
 	},
 	"assistant": {
 		"default_model": {
-   "provider": "zed.dev",
-   "model": "claude-3-5-sonnet-20240620"
-  },
+			"provider": "zed.dev",
+			"model": "claude-3-5-sonnet-20240620"
+  	},
   "version": "2",
 		"button": false,
 		"enabled": false
@@ -45,9 +45,10 @@
 	},
 	"format_on_save": "off",
 	"hard_tabs": true,
+	"tab_size": 4,
 	"theme": {
-		"mode": "system",
-		"light": "Gruvbox Light",
-		"dark": "Ayu Dark"
+		"mode": "dark",
+		"light": "Andromeda",
+		"dark": "VScode Dark Plus"
 	}
 }
