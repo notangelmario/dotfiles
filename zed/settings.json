@@ -14,11 +14,7 @@
 		"copilot": false
 	},
 	"assistant": {
-		"default_model": {
-			"provider": "zed.dev",
-			"model": "claude-3-5-sonnet-20240620"
-  	},
-  "version": "2",
+		"version": "2",
 		"button": false,
 		"enabled": false
 	},
