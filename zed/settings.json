@@ -7,16 +7,20 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+	"show_inline_completions": true,
 	"base_keymap": "VSCode",
 	"relative_line_numbers": true,
 	"features": {
 		"inline_completion_provider": "none",
 		"copilot": false
 	},
+	"jupyter": {
+		"enabled": false
+	},
 	"assistant": {
 		"version": "2",
-		"button": false,
-		"enabled": false
+		"enabled": false,
+		"button": false
 	},
 	"outline_panel": {
 		"dock": "left",
@@ -45,6 +49,6 @@
 	"theme": {
 		"mode": "dark",
 		"light": "Andromeda",
-		"dark": "VScode Dark Plus"
+		"dark": "Ayu Dark"
 	}
 }
