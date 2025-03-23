@@ -7,36 +7,58 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-	"show_inline_completions": true,
+	"ssh_connections": [
+		{
+			"host": "romulus",
+			"projects": [
+				{
+					"paths": [
+						"~/Developer"
+					]
+				},
+				{
+					"paths": [
+						"~/Developer/paquet"
+					]
+				}
+			]
+		}
+	],
+	"show_edit_predictions": true,
 	"base_keymap": "VSCode",
 	"relative_line_numbers": true,
 	"features": {
-		"inline_completion_provider": "none",
+		"edit_prediction_provider": "zed",
 		"copilot": false
 	},
 	"jupyter": {
 		"enabled": false
 	},
 	"assistant": {
+		"default_model": {
+			"provider": "copilot_chat",
+			"model": "o3-mini"
+		},
 		"version": "2",
-		"enabled": false,
-		"button": false
+		"enabled": true,
+		"dock": "right",
+		"button": true
 	},
 	"outline_panel": {
 		"dock": "left",
 		"button": false
 	},
 	"chat_panel": {
-		"dock": "left",
-		"button": false
+		"dock": "right",
+		"button": "never"
 	},
 	"collaboration_panel": {
 		"button": false,
-		"dock": "left"
+		"dock": "right"
 	},
 	"vim_mode": true,
-	"ui_font_size": 14,
-	"buffer_font_size": 14,
+	"ui_font_size": 12,
+	"buffer_font_size": 12,
 	"project_panel": {
 		"dock": "left"
 	},
@@ -48,7 +70,14 @@
 	"tab_size": 4,
 	"theme": {
 		"mode": "dark",
-		"light": "Andromeda",
+		"light": "Ayu Light",
 		"dark": "Ayu Dark"
+	},
+	"lsp": {
+		"discord_presence": {
+			"initialization_options": {
+				"git_integration": true
+			}
+		}
 	}
 }
